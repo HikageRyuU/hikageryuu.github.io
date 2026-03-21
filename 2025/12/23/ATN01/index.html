@@ -91,6 +91,10 @@
 
 <body>
 
+<style>#global-loading{position:fixed;inset:0;z-index:999999;display:flex;align-items:center;justify-content:center;flex-direction:column;background:#fff;color:#333;transition:opacity .5s}html.dark #global-loading,body.dark #global-loading{background:#121212;color:#e5e7eb}.loading-spinner{width:40px;height:40px;border:4px solid #e5e7eb;border-top-color:#42b983;border-radius:50%;animation:spin .8s linear infinite;margin-bottom:16px}html.dark .loading-spinner{border-color:#374151;border-top-color:#38a573}@keyframes spin{to{transform:rotate(360deg)}}#global-loading.complete{opacity:0;pointer-events:none}</style>
+<div id="global-loading"><div class="loading-spinner"></div><p>全力载入中...</p></div>
+<script>window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('global-loading').classList.add('complete')},300)})</script>
+
   <!-- app wrapper -->
   <div class="trm-app-frame">
 
