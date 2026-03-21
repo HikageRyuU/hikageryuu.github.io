@@ -98,7 +98,11 @@
 
 <style>#global-loading{position:fixed;inset:0;z-index:999999;display:flex;align-items:center;justify-content:center;flex-direction:column;background:#fff;color:#333;transition:opacity .5s}html.dark #global-loading,body.dark #global-loading{background:#121212;color:#e5e7eb}.loading-spinner{width:40px;height:40px;border:4px solid #e5e7eb;border-top-color:#42b983;border-radius:50%;animation:spin .8s linear infinite;margin-bottom:16px}html.dark .loading-spinner{border-color:#374151;border-top-color:#38a573}@keyframes spin{to{transform:rotate(360deg)}}#global-loading.complete{opacity:0;pointer-events:none}</style>
 <div id="global-loading"><div class="loading-spinner"></div><p>全力载入中...</p></div>
-<script>window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('global-loading').classList.add('complete')},300)})</script>
+<script>
+window.addEventListener('DOMContentLoaded',()=>{
+  setTimeout(()=>{document.getElementById('global-loading').classList.add('complete');},200);
+});
+</script>
 
   <!-- app wrapper -->
   <div class="trm-app-frame">
@@ -416,7 +420,7 @@
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
     <p>你会画sdl的话你画谁都会成功的。<br>同桌酱很喜欢花魁装的4我很高兴但是我快被这个设定整崩溃了，真的快写吐了。。。。</p>
-<p><img src="https://s2.loli.net/2025/06/11/T4YKSwMZv2aXhgN.jpg" alt="01.jpg" onerror='this.onerror=null;this.src="/img/404.jpg"'><br><img src="https://s2.loli.net/2025/06/11/fsR4HtK3ix8UCOB.jpg" alt="02.jpg" onerror='this.onerror=null;this.src="/img/404.jpg"'><br><img src="https://s2.loli.net/2025/06/11/rV81y5Ha3cKsS4R.jpg" alt="03.jpg" onerror='this.onerror=null;this.src="/img/404.jpg"'><br><img src="https://s2.loli.net/2025/06/11/tyTheSoU8256RIu.jpg" alt="04.jpg" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<p><img src="https://s2.loli.net/2025/06/11/T4YKSwMZv2aXhgN.jpg" alt="01.jpg" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br><img src="https://s2.loli.net/2025/06/11/fsR4HtK3ix8UCOB.jpg" alt="02.jpg" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br><img src="https://s2.loli.net/2025/06/11/rV81y5Ha3cKsS4R.jpg" alt="03.jpg" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br><img src="https://s2.loli.net/2025/06/11/tyTheSoU8256RIu.jpg" alt="04.jpg" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
 
 </article>
     
