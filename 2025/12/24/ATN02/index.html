@@ -2,6 +2,9 @@
 <html lang="zh-Hans">
 
 <head>
+  <script>
+  localStorage.setItem('theme-mode', 'style-dark');
+  </script>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="x5-fullscreen" content="true">
 <meta name="full-screen" content="yes">
@@ -65,7 +68,7 @@
 
 
 <!-- Variable -->
-<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Hikage Aoi","root":"/","typed_text":["睡眠中...","进食中...","我思故我在...","意淫中...","思考中...","劳作中..."],"theme_version":"2.0.5","theme":{"switch":true,"default":"auto"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","appleTouchIcon":"/img/favicon.svg","webmanifest":null,"visibilitychange":true,"hidden":"/img/favicon.svg","showText":"早安·午安·晚安~","hideText":"还回来吗~~？"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false}};</script>
+<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Hikage Aoi","root":"/","typed_text":["睡眠中...","进食中...","我思故我在...","意淫中...","思考中...","劳作中..."],"theme_version":"2.0.5","theme":{"switch":true,"default":"dark"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","appleTouchIcon":"/img/favicon.svg","webmanifest":null,"visibilitychange":true,"hidden":"/img/favicon.svg","showText":"早安·午安·晚安~","hideText":"还回来吗~~？"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false}};</script>
 <script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2026-03-20 20:28:33"};</script>
 
 <!-- Theme mode css -->
@@ -89,15 +92,8 @@
  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
 
-<style>#global-loading{position:fixed;inset:0;z-index:999999;display:flex;align-items:center;justify-content:center;flex-direction:column;background:#fff;color:#333;transition:opacity .5s}html.dark #global-loading,body.dark #global-loading{background:#121212;color:#e5e7eb}.loading-spinner{width:40px;height:40px;border:4px solid #e5e7eb;border-top-color:#42b983;border-radius:50%;animation:spin .8s linear infinite;margin-bottom:16px}html.dark .loading-spinner{border-color:#374151;border-top-color:#38a573}@keyframes spin{to{transform:rotate(360deg)}}#global-loading.complete{opacity:0;pointer-events:none}</style>
-<div id="global-loading"><div class="loading-spinner"></div><p>全力载入中...</p></div>
-<script>
-window.addEventListener('DOMContentLoaded',()=>{
-  setTimeout(()=>{document.getElementById('global-loading').classList.add('complete');},200);
-});
-</script>
+<body>
 
   <!-- app wrapper -->
   <div class="trm-app-frame">
@@ -223,12 +219,13 @@ window.addEventListener('DOMContentLoaded',()=>{
 
             <!-- body -->
             
+
 <div class="trm-content-start">
     <!-- banner -->
     <div class="trm-banner" data-scroll data-scroll-direction="vertical">
     
     <!-- banner cover -->
-    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3" src="/img/banner.png">
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3" src="/img/Astro1.jpg">
     <!-- banner cover end -->
     
 
@@ -646,7 +643,9 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 
 <script id="async-script" src="/js/main.js?v=2.0.5"></script>
+  
 
+  
 </body>
 
 </html>
