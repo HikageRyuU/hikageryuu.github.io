@@ -1,0 +1,9 @@
+#trm-content h1::before,
+#trm-content h2::before,
+#trm-content h3::before,
+#trm-content h4::before,
+#trm-content h5::before,
+#trm-content h6::before {
+  content: none !important;
+  display: none !important;
+}
