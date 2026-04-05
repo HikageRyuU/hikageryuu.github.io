@@ -776,6 +776,22 @@
   
 
   
-</body>
+<!-- hexo injector body_end start -->
+<script>
+let autoTimer = setInterval(function() {
+  const val = sessionStorage.getItem('blogChoice');
+  if (val) {
+    if (val === '1') {
+      const img = document.getElementById('18img');
+      if(img) img.style.display = 'block';
+    } else {
+      const text = document.getElementById('18text');
+      if(text) text.style.display = 'block';
+    }
+    clearInterval(autoTimer);
+  }
+}, 100);
+</script>
+<!-- hexo injector body_end end --></body>
 
 </html>
