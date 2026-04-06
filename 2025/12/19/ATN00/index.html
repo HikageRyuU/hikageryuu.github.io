@@ -904,19 +904,30 @@ function renderBranch() {
   
 <!-- hexo injector body_end start -->
 <script>
-let autoTimer = setInterval(function() {
-  const val = sessionStorage.getItem('blogChoice');
-  if (val) {
+document.addEventListener('DOMContentLoaded', function() {
+  function showAllImages() {
+    const val = sessionStorage.getItem('blogChoice');
     if (val === '1') {
-      const img = document.getElementById('18img');
-      if(img) img.style.display = 'block';
-    } else {
-      const text = document.getElementById('18text');
-      if(text) text.style.display = 'block';
+      const allImgs = document.querySelectorAll('.img18');
+      allImgs.forEach(function(el) {
+        el.style.display = 'block';
+        el.style.setProperty('display', 'block', 'important');
+      });
+      return true; 
     }
-    clearInterval(autoTimer);
+    return false;
   }
-}, 100);
+
+  if(showAllImages()) return;
+  
+  let count = 0;
+  const timer = setInterval(function() {
+    count++;
+    if(showAllImages() || count > 50) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
 </script>
 <!-- hexo injector body_end end --></body>
 
