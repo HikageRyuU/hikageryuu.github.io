@@ -1,402 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
-
-<head>
-  <script>
-  localStorage.setItem('theme-mode', 'style-dark');
-  </script>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="x5-fullscreen" content="true">
-<meta name="full-screen" content="yes">
-<meta name="theme-color" content="#317EFB" />
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="OC关系网                   #garps {             background-color: #00283a;              border-color: #34373b;          }              &#x2F;&#x2F; 初始化图表     var chart &#x3D; echarts.init(document.getElement">
-<meta property="og:type" content="website">
-<meta property="og:title" content="葵的个人站">
-<meta property="og:url" content="http://example.com/static/relation.html">
-<meta property="og:site_name" content="葵的个人站">
-<meta property="og:description" content="OC关系网                   #garps {             background-color: #00283a;              border-color: #34373b;          }              &#x2F;&#x2F; 初始化图表     var chart &#x3D; echarts.init(document.getElement">
-<meta property="og:locale">
-<meta property="article:published_time" content="2026-03-29T13:43:29.191Z">
-<meta property="article:modified_time" content="2026-03-29T13:43:29.191Z">
-<meta property="article:author" content="Hikage Aoi">
-<meta name="twitter:card" content="summary">
-
-
-<title >葵的个人站</title>
-
-<!-- Favicon -->
-
-    <link href='/img/favicon.svg?v=2.0.5' rel='icon' type='image/png' sizes='16x16' ></link>
-
-
-    <link href='/img/favicon.svg?v=2.0.5' rel='icon' type='image/png' sizes='32x32' ></link>
-
-
-    <link href='/img/favicon.svg?v=2.0.5' rel='apple-touch-icon' sizes='180x180' ></link>
-
-
-
-<!-- Plugin -->
-
-
-
-
-    
-<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
-
-    
-<link rel="stylesheet" href="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
-
-    
-<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
-
-    
-    
-
-
-
-
-<!-- Icon -->
-
-    
-<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
-
-
-
-
-<!-- Variable -->
-<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Hikage Aoi","root":"/","typed_text":["睡眠中...","进食中...","我思故我在...","意淫中...","思考中...","劳作中..."],"theme_version":"2.0.5","theme":{"switch":true,"default":"dark"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","appleTouchIcon":"/img/favicon.svg","webmanifest":null,"visibilitychange":true,"hidden":"/img/favicon.svg","showText":"早安·午安·晚安~","hideText":"还回来吗~~？"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2026-03-29 21:43:29"};</script>
-
-<!-- Theme mode css -->
-<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.0.5" id="trm-switch-style">
-<script>
-    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
-    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
-    let type = catchMode === 'style-dark' ? 'add' : 'remove';
-    document.documentElement.classList[type]('dark')
-</script>
-
-<!-- CDN -->
-
-
-    
-    
-
-
-
-<!-- Site Analytics -->
- 
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-
-<body>
-
-  <!-- app wrapper -->
-  <div class="trm-app-frame">
-
-    <!-- page preloader -->
-    <div class="trm-preloader">
-    <div class="trm-holder">
-        <div class="preloader">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-</div>
-    <!-- page preloader end -->
-
-    <!-- change mode preloader -->
-    <div class="trm-mode-swich-animation-frame">
-    <div class="trm-mode-swich-animation">
-        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
-        <div class="trm-horizon"></div>
-        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
-    </div>
-</div>
-    <!-- change mode preloader end -->
-
-      <!-- scroll container -->
-      <div id="trm-dynamic-content" class="trm-swup-animation">
-        <div id="trm-scroll-container" class="trm-scroll-container" data-scroll-container style="opacity: 0">
-          <div data-scroll-section id="content" class="trm-scroll-section">
-
-            <div class="locomotive-scroll__sticky-target" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none;"></div>
-
-            <!-- top bar -->
-            <header class="trm-top-bar" data-scroll data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="-10">
-	<div class="container">
-		<div class="trm-left-side">
-			<!-- logo -->
-<a href="/" class="trm-logo-frame trm-anima-link">
-    
-        <img alt="logo" src="/img/favicon.svg">
-    
-    
-        <div class="trm-logo-text">
-            日影<span>葵</span>
-        </div>
-    
-</a>
-<!-- logo end -->
-		</div>
-		<div class="trm-right-side">
-			<!-- menu -->
-<div class="trm-menu">
-    <nav>
-        <ul>
-            
-            <li class="menu-item-has-children ">
-                <a  href="/4loveBBS/" target="">
-                    4loveBBS
-                </a>
-                
-            </li>
-            
-            <li class="menu-item-has-children ">
-                <a  href="/" target="">
-                    主页
-                </a>
-                
-            </li>
-            
-            <li class="menu-item-has-children ">
-                <a  href="/about/" target="">
-                    关于
-                </a>
-                
-            </li>
-            
-            <li class="menu-item-has-children ">
-                <a  href="/tags/" target="">
-                    标签
-                </a>
-                
-            </li>
-            
-            <li class="menu-item-has-children ">
-                <a  href="/categories/" target="">
-                    合集
-                </a>
-                
-            </li>
-            
-            <li class="menu-item-has-children ">
-                <a  href="/archives/" target="">
-                    归档
-                </a>
-                
-            </li>
-            
-        </ul>
-    </nav>
-</div>
-<!-- menu end -->
-			
-    <!-- mode switcher place -->
-    <div class="trm-mode-switcher-place">
-        <div class="trm-mode-switcher">
-            <i class="iconfont far fa-sun"></i>
-            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
-            <label class="trm-swich" for="trm-swich"></label>
-            <i class="iconfont far fa-moon"></i>
-        </div>
-    </div>
-    <!-- mode switcher place end -->
-
-			
-		</div>
-		<div class="trm-menu-btn">
-			<span></span>
-		</div>
-	</div>
-</header>
-            <!-- top bar end -->
-
-            <!-- body -->
-            
-
-    
-<div class="trm-content-start">
-    <!-- banner -->
-    <div class="trm-banner" data-scroll data-scroll-direction="vertical">
-    
-    <!-- banner cover -->
-    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3" src="/img/banner.png">
-    <!-- banner cover end -->
-    
-
-    <!-- banner content -->
-    <div class="trm-banner-content trm-overlay">
-        <div class="container" data-scroll data-scroll-direction="vertical" data-scroll-speed="0">
-            <div class="row">
-                
-                <div class="col-lg-4"></div>
-                
-                <div class="col-lg-8">
-
-                    <!-- banner title -->
-                    <div class="trm-banner-text ">
-                        <div class="trm-label trm-mb-20">
-                            Welcome~Aoi&#39;s Blog
-                        </div>
-                        <h1 class="trm-mb-30 trm-hsmb-font">
-                            
-                        </h1>
-
-                        
-                            <ul class="trm-breadcrumbs trm-label">
-                                <li>
-                                    <a href="/" class="trm-anima-link">Home</a>
-                                </li>
-                                <li>
-                                    <span>
-                                        static
-                                    </span
-                                ></li>
-                            </ul>
-                        
-                    </div>
-                    <!-- banner title end -->
-
-                    <!-- scroll hint -->
-                    <a href="#about-triger" data-scroll-to="#about-triger" data-scroll-offset="-130" class="trm-scroll-hint-frame">
-                        <div class="trm-scroll-hint"></div>
-                        <span class="trm-label">Scroll down</span>
-                    </a>
-                    <!-- scroll hint end -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- banner content end -->
-</div>
-    <!-- banner end -->
-    <div class="container">
-        <div class="row">
-            
-                <div id="page-sidebar" class="col-lg-4 hidden-sm">
-                    <!-- main card -->
-                    
-
-<div class="trm-main-card-frame trm-sidebar">
-    <div class="trm-main-card" data-scroll data-scroll-repeat data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="60"> 
-    
-        <!-- card header -->
-<div class="trm-mc-header">
-    <div class="trm-avatar-frame trm-mb-20">
-        <img alt="Avatar" class="trm-avatar" src="/img/avatar.jpg">
-    </div>
-    <h5 class="trm-name trm-mb-15">
-        日影葵
-    </h5>
-    
-        <div class="trm-label">
-            一般路过Ⅳ厨。
-            <span class="trm-typed-text">
-                <!-- Words for theme.user.typedText -->
-            </span>
-        </div>
-    
-</div>
-<!-- card header end -->
-        <!-- sidebar social -->
-
-<!-- sidebar social end -->
-        <!-- info -->
-<div class="trm-divider trm-mb-40 trm-mt-40"></div>
-<ul class="trm-table trm-mb-20">
-    
-        <li>
-            <div class="trm-label">
-                进站请先看:
-            </div>
-            <div class="trm-label trm-label-light">
-                【关于/about】栏
-            </div>
-        </li>
-    
-        <li>
-            <div class="trm-label">
-                生日:
-            </div>
-            <div class="trm-label trm-label-light">
-                西历5月25日
-            </div>
-        </li>
-    
-        <li>
-            <div class="trm-label">
-                身高:
-            </div>
-            <div class="trm-label trm-label-light">
-                167cm
-            </div>
-        </li>
-    
-        <li>
-            <div class="trm-label">
-                我是谁？:
-            </div>
-            <div class="trm-label trm-label-light">
-                ？？？
-            </div>
-        </li>
-    
-        <li>
-            <div class="trm-label">
-                我从哪里来？:
-            </div>
-            <div class="trm-label trm-label-light">
-                ？？？
-            </div>
-        </li>
-    
-        <li>
-            <div class="trm-label">
-                我要去哪里？:
-            </div>
-            <div class="trm-label trm-label-light">
-                ？？？
-            </div>
-        </li>
-    
-</ul>
-<!-- info end -->
-
-        
-    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
-    <!-- action button -->
-    <div class="text-center">
-        <a href="mailto:open_cluster@163.com" class="trm-btn">
-            联系我
-            <i class="iconfont far fa-envelope"></i>
-        </a>
-    </div>
-    <!-- action button end -->
-
-    
-    </div>
-</div>
-                    <!-- main card end -->
-                </div>
-            
-            <div id="page-content" class="col-lg-8">
-                <div class="trm-content" id="trm-content">
-					<link rel="stylesheet" href="/css/trm-custom.css">
-                    <div data-scroll data-scroll-repeat data-scroll-offset="500" id="about-triger"></div>
-
-                    <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>OC关系网</title>
@@ -407,9 +9,24 @@
             border-color: #34373b; 
         }
     </style>
+    <style>
+    html,body{
+      margin:0;
+      padding:0;
+      overflow:hidden !important;
+    }
+    *::-webkit-scrollbar{
+      display:none;
+    }
+    *{
+      scrollbar-width:none;
+      -ms-overflow-style:none;
+    }
+    </style>
+
 </head>
 <body>
-<div id="garps" class="container" style="width: 100%; height: 600px; border-radius: 16px; border: 4px solid #121314; box-sizing: border-box;">
+<div id="garps" class="container" style="width: 100%; height: 900px; border-radius: 16px; border: 4px solid #121314; box-sizing: border-box;">
 <script>
     // 初始化图表
     var chart = echarts.init(document.getElementById('garps'), 'white', {renderer: 'canvas'});
@@ -476,10 +93,6 @@
                     padding: [2, 6]
                 }
             },
-            categories: [ // 分类
-                {name: '主角'},
-                {name: '配角'}
-            ],
             itemStyle: {
                 normal: {
                     borderColor: '#02162b',
@@ -500,40 +113,393 @@
                     }
                 }
             },
-            symbolKeepAspect: true, // 保持图片比例
+            symbolKeepAspect: false, // 保持图片比例
             // 节点数据
             data: [
-                {id: 'cmb', name: '崇木表', category: 0, 
+                {id: 'cmb', name: '崇木表', main: 1 ,
                  link: '/2024/01/31/takakiomote', 
-                 symbol: ''}, 
-                {id: 'mtl', name: '墨涕零', category: 1, 
+                 symbol: 'image:///img/ocicon/OMOTE.png'}, 
+                {id: 'mtl', name: '墨涕零', 
                  link: '/2024/07/21/motiling/', 
-                 symbol: ''},
-                {id: 'pl', name: '？？？', category: 1, 
+                 symbol: 'image:///img/ocicon/MOTILING.png'},
+                {id: 'pl', name: '？？？', 
                  link: '/2024/07/24/pili/', 
-                 symbol: ''},
-                {id: 'bin', name: '津久井荒濑', category: 1, 
+                 symbol: 'image:///img/ocicon/PILI.png'},
+                {id: 'bin', name: '津久井荒瀬', 
                  link: '/2024/07/21/migiwa/', 
-                 symbol: ''},
-                {id: 'tszmq', name: '笹沼真琴', category: 1, 
+                 symbol: 'image:///img/ocicon/MIGIWA.png'},
+                {id: 'tzzq', name: '笹沼真琴', 
                  link: '', 
-                 symbol: ''}
+                 symbol: 'image:///img/ocicon/MAKOTO.png'},
+                {id: 'lcz', name: '列车长', 
+                 link: '', 
+                 symbol: ''},            
+                {id: 'c16', name: 'C-16号', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'Te', name: 'Tear', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'Ti', name: 'Tiffany', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'Sa', name: 'Sacchary', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'gyzj', name: '皐月ありま', main: 1 , 
+                 link: '', 
+                 symbol: ''},    
+                {id: 'ydmy', name: '伊東目隠', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'htyx', name: '鶴田遊咲', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'yjlla', name: '月见里らくあ', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'Fo', name: 'Found', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'lmxzz', name: '六芒星の息子', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'cmzwl', name: '崇木昭五郎', 
+                 link: '', 
+                 symbol: ''},      
+                {id: 'xz', name: '津久井明美', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'jjjls', name: '津久井琉生', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'tzl', name: '笹沼陸', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'bcjlc', name: '八重㭴レイナ', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'mjz', name: '毛骏知', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'ryl', name: '日影琉', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'ryk', name: '日影葵', main: 1 , 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'mbs', name: '墨北山', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'msy', name: '毛思扬', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'ss', name: '祟神', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'nbq', name: '楠本泉', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'nbj', name: '楠本静', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'nbyf', name: '楠本一夫', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'nbjlm', name: '楠本久留美', 
+                 link: '', 
+                 symbol: ''},   
+                {id: 'xyz', name: '夏音知', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'xycz', name: '夏音村政', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'tkxz', name: '樋口星子', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'tkys', name: '樋口原树', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'bjsr', name: '坂井隼人', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'jsjhc', name: '九十九こさい', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'x', name: '休?', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'q', name: '琼', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'xuan', name: '玄', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'jlh', name: '江涟晃', 
+                 link: '', 
+                 symbol: ''},  
+                {id: 'f', name: '复', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'yt', name: '悠太', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'cryd', name: '春日瑛斗', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'crsy', name: '春日守也', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'cryr', name: '春日優人',
+                 link: '', 
+                 symbol: ''},
+                {id: 'lyhx', name: '立原紅緒',
+                 link: '', 
+                 symbol: ''},
+                {id: 'Na', name: 'Nazchaos', main: 1 , 
+                 link: '', 
+                 symbol: ''},
+                {id: 'Si', name: 'Sighostile', 
+                 link: '', 
+                 symbol: ''},
+                {id: 'Gl', name: 'Gloam', 
+                 link: '', 
+                 symbol: ''}, 
+                {id: 'El', name: 'Ella', 
+                 link: '', 
+                 symbol: ''}                        
             ],
             // 关系数据
             links: [
                 {source: 'cmb', target: 'mtl', value: '朋友'},
                 {source: 'cmb', target: 'pl', value: '死党'},
                 {source: 'cmb', target: 'bin', value: '恋人'},
-                {source: 'cmb', target: 'tszmq', value: '失踪的姐姐'},
+                {source: 'cmb', target: 'tzzq', value: '失踪的姐姐'},
+                {source: 'cmb', target: 'yjlla', value: '前同事'},
+                {source: 'cmb', target: 'xycz', value: '前同事'},
+                {source: 'cmb', target: 'nbjlm', value: '前研究对象'},
                 {source: 'mtl', target: 'cmb', value: '朋友'},
                 {source: 'mtl', target: 'pl', value: '恋人'},
                 {source: 'mtl', target: 'bin', value: '朋友'},
+                {source: 'mtl', target: 'mbs', value: '老爹'},
+                {source: 'mtl', target: 'msy', value: '妈咪'},
+                {source: 'mtl', target: 'nbq', value: '高中同学'},
+                {source: 'mtl', target: 'nbj', value: '高中同学'},
+                {source: 'mtl', target: 'xyz', value: '高中同学'},
+                {source: 'mtl', target: 'bjsr', value: '高中同学'},
                 {source: 'pl', target: 'cmb', value: '朋友&暗恋'},
                 {source: 'pl', target: 'mtl', value: '炮友'},
                 {source: 'pl', target: 'bin', value: '可怕的家伙'},
+                {source: 'pl', target: 'ss', value: '认识'},
                 {source: 'bin', target: 'cmb', value: '恋人'},
                 {source: 'bin', target: 'mtl', value: '朋友'},
-                {source: 'bin', target: 'pl', value: '认识'}
+                {source: 'bin', target: 'pl', value: '认识'},
+                {source: 'bin', target: 'xz', value: '姐'},
+                {source: 'bin', target: 'jjjls', value: '先祖'},
+                {source: 'bin', target: 'q', value: '朋友'},
+                {source: 'cmzwl', target: 'cmb', value: '养子'},
+                {source: 'cmzwl', target: 'nbyf', value: '朋友'},
+                {source: 'cmzwl', target: 'mbs', value: '死党'},
+                {source: 'xz', target: 'bin', value: '弟'},
+                {source: 'jjjls', target: 'bin', value: '传承者'},
+                {source: 'jjjls', target: 'tzl', value: '发小'},
+                {source: 'jjjls', target: 'bcjlc', value: '发小'},
+                {source: 'jjjls', target: 'mjz', value: '朋友'},
+                {source: 'jjjls', target: 'ryk', value: '朋友'},
+                {source: 'jjjls', target: 'x', value: '？'},
+                {source: 'tzl', target: 'jjjls', value: '喜欢？'},
+                {source: 'tzl', target: 'bcjlc', value: '发小'},
+                {source: 'tzl', target: 'mjz', value: '伙伴'},
+                {source: 'tzl', target: 'ryk', value: '伙伴'},
+                {source: 'bcjlc', target: 'tzl', value: '发小'},
+                {source: 'bcjlc', target: 'jjjls', value: '发小'},
+                {source: 'bcjlc', target: 'mjz', value: '喜欢'},
+                {source: 'bcjlc', target: 'ryk', value: '朋友'},
+                {source: 'mjz', target: 'jjjls', value: '朋友'},
+                {source: 'mjz', target: 'tzl', value: '朋友'},
+                {source: 'mjz', target: 'bcjlc', value: '喜欢'},
+                {source: 'mjz', target: 'ryk', value: '统领'},
+                {source: 'ryk', target: 'ryl', value: '主人'},
+                {source: 'ryk', target: 'tzl', value: '朋友'},
+                {source: 'ryk', target: 'jjjls', value: '朋友'},
+                {source: 'ryk', target: 'bcjlc', value: '朋友'},
+                {source: 'ryk', target: 'mjz', value: '朋友'},
+                {source: 'ryk', target: 'msy', value: '下属'},
+                {source: 'ryk', target: 'mbs', value: '认识'},
+                {source: 'ryk', target: 'pl', value: '认识'},
+                {source: 'ryk', target: 'yjlla', value: '下属'},
+                {source: 'ryl', target: 'ryk', value: '珍贵的造物朋友'},
+                {source: 'ryl', target: 'ss', value: '……'},
+                {source: 'mbs', target: 'cmzwl', value: '死党'},
+                {source: 'mbs', target: 'nbyf', value: '认识'},
+                {source: 'mbs', target: 'msy', value: '亲亲老婆'},
+                {source: 'msy', target: 'mbs', value: '丈夫'},
+                {source: 'msy', target: 'mjz', value: '表兄'},
+                {source: 'ss', target: 'cmb', value: '曾帮助过'},
+                {source: 'ss', target: 'cmb', value: '曾帮助过'},
+                {source: 'ss', target: 'ryl', value: '（笑）'},
+                {source: 'ss', target: 'pl', value: '认识'},
+                {source: 'ss', target: 'Sa', value: '认识'},
+                {source: 'nbq', target: 'lyhx', value: '政治老师'},
+                {source: 'nbq', target: 'cryd', value: '物理老师'},
+                {source: 'nbq', target: 'nbj', value: '弟'},
+                {source: 'nbq', target: 'nbyf', value: '父亲'},
+                {source: 'nbq', target: 'nbjlm', value: '母亲'},
+                {source: 'nbq', target: 'xyz', value: '永远喜欢'},
+                {source: 'nbq', target: 'xycz', value: '叔'},
+                {source: 'nbq', target: 'tkxz', value: '弟妹&同学'},
+                {source: 'nbq', target: 'bjsr', value: '装货'},
+                {source: 'nbq', target: 'jsjhc', value: '同学？'},
+                {source: 'nbq', target: 'x', value: '……？'},
+                {source: 'nbq', target: 'ydmy', value: '同学'},
+                {source: 'nbq', target: 'htyx', value: '同学'},
+                {source: 'nbq', target: 'gyzj', value: '朋友'},
+                {source: 'nbj', target: 'lyhx', value: '政治老师'},
+                {source: 'nbj', target: 'cryd', value: '物理老师'},
+                {source: 'nbj', target: 'nbq', value: '兄长'},
+                {source: 'nbj', target: 'nbyf', value: '父亲'},
+                {source: 'nbj', target: 'nbjlm', value: '母亲'},
+                {source: 'nbj', target: 'xyz', value: '同学'},
+                {source: 'nbj', target: 'tkxz', value: '喜欢'},
+                {source: 'nbj', target: 'ydmy', value: '同学'},
+                {source: 'nbj', target: 'jsjhc', value: '……'},
+                {source: 'nbj', target: 'x', value: '……！'},
+                {source: 'nbj', target: 'gyzj', value: '同学'},
+                {source: 'nbyf', target: 'cmzwl', value: '朋友'},
+                {source: 'nbyf', target: 'mbs', value: '认识'},
+                {source: 'nbyf', target: 'ryk', value: '……'},
+                {source: 'nbyf', target: 'nbjlm', value: '妻子'},
+                {source: 'nbyf', target: 'xycz', value: '发小'},
+                {source: 'nbyf', target: 'xyz', value: '好孩子'},
+                {source: 'nbyf', target: 'nbq', value: '逆子'},
+                {source: 'nbyf', target: 'nbj', value: '儿子'},
+                {source: 'nbyf', target: 'jsjhc', value: '……'},
+                {source: 'nbyf', target: 'jlh', value: '表侄'},
+                {source: 'nbyf', target: 'f', value: '疗养院的患者'},
+                {source: 'nbjlm', target: 'nbyf', value: '丈夫'},
+                {source: 'nbjlm', target: 'nbq', value: '大儿子'},
+                {source: 'nbjlm', target: 'nbj', value: '二儿子'},
+                {source: 'nbjlm', target: 'xycz', value: '发小'},
+                {source: 'xyz', target: 'lyhx', value: '政治老师'},
+                {source: 'xyz', target: 'cryd', value: '物理老师'},
+                {source: 'xyz', target: 'nbq', value: '不想承认喜欢……'},
+                {source: 'xyz', target: 'nbj', value: '同学'},
+                {source: 'xyz', target: 'xycz', value: '养父'},
+                {source: 'xyz', target: 'tkxz', value: '同学'},
+                {source: 'xyz', target: 'bjsr', value: '同学'},
+                {source: 'xyz', target: 'jsjhc', value: '……'},
+                {source: 'xyz', target: 'x', value: '……'},
+                {source: 'xyz', target: 'ydmy', value: '同学'},
+                {source: 'xyz', target: 'gyzj', value: '朋友'},
+                {source: 'xyz', target: 'yt', value: '同学'},
+                {source: 'xycz', target: 'xyz', value: '养子'},
+                {source: 'xycz', target: 'nbyf', value: '爱'},
+                {source: 'xycz', target: 'nbjlm', value: '发小'},
+                {source: 'xycz', target: 'cmb', value: '前同事'},
+                {source: 'tkxz', target: 'tkys', value: '哥哥'},
+                {source: 'tkxz', target: 'nbq', value: '同学'},
+                {source: 'tkxz', target: 'xyz', value: '同学'},
+                {source: 'tkxz', target: 'nbj', value: '喜欢'},
+                {source: 'tkxz', target: 'bjsr', value: '疏远'},
+                {source: 'tkxz', target: 'ydmy', value: '同学'},
+                {source: 'tkys', target: 'tkxz', value: '妹'},
+                {source: 'tkys', target: 'bjsr', value: '……恶心'},
+                {source: 'tkys', target: 'htyx', value: '感谢'},
+                {source: 'tkys', target: 'yt', value: '同学'},
+                {source: 'bjsr', target: 'lyhx', value: '政治老师'},
+                {source: 'bjsr', target: 'cryd', value: '物理老师'},
+                {source: 'bjsr', target: 'nbq', value: '同学'},
+                {source: 'bjsr', target: 'nbj', value: '同学'},
+                {source: 'bjsr', target: 'xyz', value: '同学'},
+                {source: 'bjsr', target: 'tkxz', value: '……'},
+                {source: 'bjsr', target: 'tkys', value: '……'},
+                {source: 'bjsr', target: 'ydmy', value: '堂兄弟'},
+                {source: 'jsjhc', target: 'x', value: '……'},
+                {source: 'x', target: 'jsjhc', value: '……'},
+                {source: 'yjlla', target: 'ryk', value: '统领'},
+                {source: 'yjlla', target: 'cmb', value: '前同事'},
+                {source: 'yjlla', target: 'htyx', value: '弟'},
+                {source: 'htyx', target: 'nbq', value: '同学'},
+                {source: 'htyx', target: 'yjlla', value: '姐'},
+                {source: 'htyx', target: 'ydmy', value: '朋友'},
+                {source: 'htyx', target: 'gyzj', value: '朋友'},
+                {source: 'ydmy', target: 'nbq', value: '同学'},       
+                {source: 'ydmy', target: 'nbj', value: '同学'},  
+                {source: 'ydmy', target: 'xyz', value: '同学'},  
+                {source: 'ydmy', target: 'tkxz', value: '同学'},
+                {source: 'ydmy', target: 'bjsr', value: '堂兄弟'},  
+                {source: 'ydmy', target: 'htyx', value: '同学……？'},    
+                {source: 'ydmy', target: 'gyzj', value: '朋友'},
+                {source: 'gyzj', target: 'htyx', value: '朋友'},
+                {source: 'gyzj', target: 'ydmy', value: '朋友'},
+                {source: 'gyzj', target: 'nbq', value: '朋友'},
+                {source: 'gyzj', target: 'xyz', value: '朋友'},
+                {source: 'gyzj', target: 'nbj', value: '同学'},
+                {source: 'gyzj', target: 'lcz', value: '烦人的家伙'},
+                {source: 'gyzj', target: 'c16', value: '臭小鬼'},
+                {source: 'gyzj', target: 'tzzq', value: '朋友吧'},
+                {source: 'gyzj', target: 'Te', value: '朋友'},
+                {source: 'gyzj', target: 'Ti', value: '朋友'},
+                {source: 'q', target: 'xuan', value: '在意'},
+                {source: 'q', target: 'Fo', value: '客人'},
+                {source: 'xuan', target: 'q', value: '经常见面的酒保'},
+                {source: 'xuan', target: 'jlh', value: '同事'},
+                {source: 'xuan', target: 'Fo', value: '酒友'},
+                {source: 'jlh', target: 'xuan', value: '同事'},
+                {source: 'lcz', target: 'gyzj', value: '最喜欢哟'},
+                {source: 'lcz', target: 'tzzq', value: '喜欢哟'},
+                {source: 'lcz', target: 'Te', value: '喜欢哟'},
+                {source: 'lcz', target: 'Ti', value: '喜欢哟'},
+                {source: 'lcz', target: 'c16', value: '喜欢哟'},
+                {source: 'lcz', target: 'Sa', value: '乘客'},
+                {source: 'lcz', target: 'Fo', value: '乘客'},
+                {source: 'lcz', target: 'xuan', value: '乘客'},
+                {source: 'lcz', target: 'ryk', value: '乘客'},
+                {source: 'lcz', target: 'lmxzz', value: '乘客'},
+                {source: 'c16', target: 'lcz', value: '爹地'},
+                {source: 'c16', target: 'gyzj', value: '喜欢哟'},
+                {source: 'c16', target: 'tzzq', value: '姐姐'},
+                {source: 'c16', target: 'Ti', value: '姐姐'},
+                {source: 'c16', target: 'Te', value: '哥'},
+                {source: 'tzzq', target: 'lcz', value: '喜欢哟'},
+                {source: 'tzzq', target: 'c16', value: '喜欢哟'},
+                {source: 'tzzq', target: 'gyzj', value: '隐性情敌'},
+                {source: 'tzzq', target: 'Te', value: '朋友'},
+                {source: 'tzzq', target: 'Ti', value: '朋友'},
+                {source: 'tzzq', target: 'tzl', value: '先祖'},
+                {source: 'Te', target: 'lcz', value: '养父'},
+                {source: 'Te', target: 'c16', value: '小鬼'},
+                {source: 'Te', target: 'Ti', value: '妹'},
+                {source: 'Te', target: 'gyzj', value: '……'},
+                {source: 'Te', target: 'tzzq', value: '……'},
+                {source: 'Te', target: 'Sa', value: '为什么还不去死'},
+                {source: 'Ti', target: 'lcz', value: '养父'},
+                {source: 'Ti', target: 'c16', value: '小16'},
+                {source: 'Ti', target: 'Te', value: '哥'},
+                {source: 'Ti', target: 'gyzj', value: '朋友'},
+                {source: 'Ti', target: 'tzzq', value: '朋友'},
+                {source: 'Sa', target: 'Te', value: '（笑）'},
+                {source: 'Sa', target: 'ss', value: '认识'},
+                {source: 'Fo', target: 'xuan', value: '酒友'},
+                {source: 'Fo', target: 'lmxzz', value: '……'},
+                {source: 'cryd', target: 'lyhx', value: '同事'},
+                {source: 'cryd', target: 'cryr', value: '养子'},
+                {source: 'cryd', target: 'crsy', value: '养子'},
+                {source: 'lyhx', target: 'cryd', value: '……'},
+                {source: 'f', target: 'yt', value: '去死'},
+                {source: 'f', target: 'nbj', value: '……'},
+                {source: 'yt', target: 'f', value: '喜欢喜欢喜欢喜欢喜欢喜欢'},
+                {source: 'Na', target: 'Gl', value: '喜欢得不行'},
+                {source: 'Na', target: 'El', value: '喜欢'},
+                {source: 'Na', target: 'Si', value: '哥哥'},
+                {source: 'Si', target: 'El', value: '朋友'},
+                {source: 'Si', target: 'Na', value: '弟'},
+                {source: 'Si', target: 'Gl', value: '……'},
+                {source: 'Gl', target: 'Na', value: '喜欢'},
+                {source: 'Gl', target: 'El', value: '妹'},
+                {source: 'El', target: 'Gl', value: '哥'},
+                {source: 'El', target: 'Na', value: '喜欢'}
             ]
         }]
     };
@@ -588,6 +554,75 @@
         });
     })();
 
+    (function filterByFocus() {
+        const focusId = new URLSearchParams(location.search).get('focus');
+        if (!focusId) return;
+
+        const series = option.series[0];
+        const relatedLinks = series.links.filter(l =>
+        String(l.source) === focusId || String(l.target) === focusId
+        );
+        const relatedIds = new Set([focusId]);
+        relatedLinks.forEach(l => {
+            relatedIds.add(String(l.source));
+            relatedIds.add(String(l.target));
+        });
+        series.data = series.data.filter(n => relatedIds.has(String(n.id)));
+        series.links = relatedLinks;
+    })();
+
+(function computeDynamicEdgeLengths() {
+        var links = option.series[0].links;
+        var nodes = option.series[0].data;
+        var MIN_LEN = 180;     // 最短边
+        var MAX_LEN = 620;     // 最长边
+        var MAIN_EXTRA = 100;   // 双主角加长
+
+        var nodeMap = {};
+        nodes.forEach(function (n) { nodeMap[n.id] = n; });
+
+        var adjacency = {};
+        nodes.forEach(function (n) { adjacency[n.id] = {}; });
+        links.forEach(function (l) {
+            var s = String(l.source), t = String(l.target);
+            if (adjacency[s]) adjacency[s][t] = true;
+            if (adjacency[t]) adjacency[t][s] = true;
+        });
+        var degree = {};
+        for (var id in adjacency) degree[id] = Object.keys(adjacency[id]).length;
+
+        var outgoing = {};
+        nodes.forEach(function (n) { outgoing[n.id] = {}; });
+        links.forEach(function (l) {
+            var s = String(l.source), t = String(l.target);
+            if (outgoing[s]) outgoing[s][t] = true;
+        });
+
+        links.forEach(function (l) {
+            var s = String(l.source), t = String(l.target);
+            var degS = degree[s] || 1;
+            var degT = degree[t] || 1;
+            var importance = (1 / degS + 1 / degT) / 2;
+
+            var isMutual = outgoing[s] && outgoing[t] && outgoing[s][t] && outgoing[t][s];
+            if (isMutual) {
+                importance = Math.min(1, importance * 1.5);
+            } else {
+                importance = importance * 0.85;
+            }
+
+            var len = MIN_LEN + (MAX_LEN - MIN_LEN) * (1 - importance);
+
+            var ns = nodeMap[s], nt = nodeMap[t];
+            if (ns && nt && ns.main === 1 && nt.main === 1) {
+                len += MAIN_EXTRA;
+            }
+
+            l._len = Math.round(len);
+        });
+    })();
+
+
     chart.setOption(option);
 
     // 节点点击跳转
@@ -610,154 +645,5 @@
     },500)
 </script>
 </div>
-<!-- hexo injector body_end start -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  function showAllImages() {
-    const val = sessionStorage.getItem('blogChoice');
-    if (val === '1') {
-      const allImgs = document.querySelectorAll('.img18');
-      allImgs.forEach(function(el) {
-        el.style.display = 'block';
-        el.style.setProperty('display', 'block', 'important');
-      });
-      return true; 
-    }
-    return false;
-  }
-
-  if(showAllImages()) return;
-  
-  let count = 0;
-  const timer = setInterval(function() {
-    count++;
-    if(showAllImages() || count > 50) {
-      clearInterval(timer);
-    }
-  }, 100);
-});
-</script>
-<!-- hexo injector body_end end --></body>
-</html>
-
-
-                    <div class="trm-divider footer-divider"></div>
-
-                    <!-- footer -->
-                    <footer class="trm-scroll-animation" data-scroll data-scroll-offset="50">
-
-    
-
-    
-        <div class="trm-footer-item">
-            <span>© 2023- 2026</span>
-            <span class="footer-separator"data-separator=" · "></span>
-            <span class="trm-accent-color">日影葵</span>
-        </div>
-    
-
-    
-        <div class="trm-footer-item">
-            <span>
-                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.3.0
-            </span>
-            <span class="footer-separator" data-separator=" | "></span>
-            <span> 
-                主题 - 
-                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
-                v2.0.5
-            </span>
-        </div>
-      
-
-     
-
-     
-</footer>
- 
-
-<script src="/js/d3.v7.min.js"></script>
-<script src="/js/cola.min.js"></script>
-                    <!-- footer end -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <!-- body end -->
-
-            <div class="trm-fixed-container" data-scroll data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="-10">
-    
-    
-    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
-        <i class="iconfont fas fa-arrow-up"></i>
-    </div>
-</div>
-          </div>
-        </div>
-      </div>
-      <!-- scroll container end -->
-
-  </div>
-  <!-- app wrapper end -->
-
-  
-  <!-- Plugin -->
-
-
-
-
-    
-    
-<script src="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-
-    
-<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
-    
-
-    
-        <script src="/js/plugins/typing.js?v=2.0.5"></script>
-    
-
-    
-
-    <!-- 数学公式 -->
-    
-
-    <!-- 评论插件 -->
-    
-        
-
-        
-    
-
-
-
-<!-- CDN -->
-
-
-    
-
-    
-
-    
-
-
-
-
-    <!-- Service Worker -->
-    
-    <!-- baidu push -->
-    
-
-
-<script id="async-script" src="/js/main.js?v=2.0.5"></script>
-  
-
-  
 </body>
-
 </html>
